@@ -1,0 +1,186 @@
+/*
+---------------------------------------
+
+-- FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-- WHITE SPACES
+
+-- SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+-- Notes :
+
+1- rem = ( default size of the screen (px) )
+
+---------------------------------------
+ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px #fa5252;
+}
+
+html {
+  /*
+    Default font size of the page = 16px , but i will used 10px
+    as a  default font-size in my website .
+    ( 10 / 16 ) = 62.5%
+    1 rem = 10px
+  */
+  font-size: 62.5%; /* 62.5 % from the font size of any screen size */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #222;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.header,
+.hero-section {
+  background-color: #f1f3f5;
+  max-width: 180rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 140em;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.margin--bottom {
+  margin-bottom: 9.6rem;
+}
+
+.primary-heading {
+  font-size: 7.2rem;
+  letter-spacing: -0.5px;
+  color: #222;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+}
+
+.secondary-heading {
+  font-size: 4.6rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.third-heading {
+  font-size: 3.6rem;
+  line-height: 1.05;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+}
+
+.sub-heading {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 4.6rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2--columns,
+.grid--3--columns {
+  column-gap: 3.2rem;
+  row-gap: 3.2rem;
+}
+
+.grid--2--columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4--columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn,
+.header-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.6rem 2.4rem;
+  border-radius: 9.6rem;
+}
+
+.btn {
+  color: #fff;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.09);
+}
+
+.btn:link,
+.btn:visited {
+  color: #222;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #fa5252;
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 0.4s;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.border-arrow {
+  padding: 1.6rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.09);
+}
+
+.border-arrow:hover {
+  background-color: #fa5252;
+  color: #fff;
+  transition: background-color 0.4s;
+  cursor: pointer;
+}
+
+.arrow-icons {
+  display: flex;
+  justify-self: end;
+  gap: 2rem;
+}
+
+/* ************************************************** */

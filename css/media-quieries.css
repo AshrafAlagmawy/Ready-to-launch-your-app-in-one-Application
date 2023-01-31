@@ -1,0 +1,536 @@
+/* 
+
+Note That 
+
+rem and em in media queries doesn't depend on the default font-size of html 
+
+1rem = 1em = 16px
+
+*/
+
+/********************************
+  Below 1360px (small desktops)
+*********************************/
+
+@media (max-width: 85em) {
+  html {
+    font-size: 62%;
+  }
+
+  .primary-heading {
+    font-size: 6.2rem;
+  }
+
+  .container {
+    max-width: 130rem;
+  }
+
+  .how-it-work-feature {
+    padding: 4.8rem 6.4rem 4.8rem 4.8rem;
+  }
+}
+
+/********************************
+  Below 1248px (Landscape Tablets)
+*********************************/
+
+@media (max-width: 78em) {
+  /* Font-size = 9px = (9/16)% = 56% */
+  html {
+    font-size: 60%;
+  }
+
+  .discover-image-box img {
+    width: 95%;
+    height: 95%;
+  }
+
+  .ICONS {
+    column-gap: 6.4rem;
+  }
+
+  .icon-container {
+    padding: 3.2rem;
+  }
+
+  .secondary-heading {
+    font-size: 4rem;
+  }
+
+  .how-it-work-feature {
+    padding: 4.8rem 6.4rem 4.8rem 4.8rem;
+  }
+}
+
+/********************************
+  Below 1152px (Landscape Tablets)
+*********************************/
+
+@media (max-width: 72em) {
+  html {
+    font-size: 57%;
+  }
+}
+
+/********************************
+  Below 1104px (Landscape Tablets)
+*********************************/
+
+@media (max-width: 69em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/********************************
+  Below 1056px (Landscape Tablets)
+*********************************/
+
+@media (max-width: 66em) {
+  .primary-heading {
+    font-size: 5.8rem;
+  }
+}
+
+/********************************
+  Below 1000px (Landscape Tablets)
+*********************************/
+
+@media (max-width: 62.5em) {
+  .primary-heading {
+    font-size: 5.5rem;
+  }
+}
+
+/********************************
+  Below 960px (Tablets)
+*********************************/
+
+@media (max-width: 60em) {
+  /* html {
+    font-size: 47%;
+  } */
+  .primary-heading {
+    font-size: 4.8rem;
+  }
+
+  .sub-heading {
+    font-size: 1.6rem;
+  }
+
+  .input-hero {
+    margin-right: 20%;
+  }
+
+  .hero-text {
+    font-size: 1.6rem;
+  }
+
+  .secondary-heading {
+    font-size: 3.2rem;
+  }
+
+  .third-heading {
+    font-size: 2.4rem;
+  }
+
+  .discover-image-box img {
+    width: 85%;
+    height: 85%;
+  }
+
+  .download-title {
+    font-size: 1.4rem;
+  }
+
+  .download-type {
+    font-size: 2rem;
+  }
+
+  .download-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* MOBILE */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-list {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* transform: translateX(100%); */
+    transform: translateY(100%);
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  .nav-open .nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .main-header-nav {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+  }
+
+  .grid--3--columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .selected {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .price-plan:nth-child(2) {
+    height: 100%;
+  }
+
+  .download-types {
+    margin-right: 20%;
+  }
+}
+
+/********************************
+  Below 912px (Smaller Tablets)
+*********************************/
+
+@media (max-width: 57em) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 6.4rem;
+  }
+
+  .hero-content-box {
+    padding-right: 9.6rem;
+  }
+
+  .hero-text {
+    font-size: 1.8rem;
+  }
+
+  .input-hero {
+    margin-right: 45%;
+  }
+
+  .feedbacks {
+    grid-template-columns: auto 1fr;
+  }
+
+  .hero-img {
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .footer-cols {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 6.4rem;
+  }
+
+  .first-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .second-col {
+    grid-column: span 2;
+  }
+
+  .opinions {
+    padding: 6.4rem;
+  }
+
+  .marketing-image {
+    width: 95%;
+  }
+
+  .marketing-contents {
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
+  }
+
+  .marketing-content-text {
+    margin-left: 4.8rem;
+  }
+
+  .grid--4--columns {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.4rem;
+  }
+
+  .sponsors-1,
+  .sponsors-2 {
+    row-gap: 3.2rem;
+  }
+
+  .sponsors-1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sponsors-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .download-part {
+    flex-direction: column;
+  }
+
+  .opinions {
+    grid-template-columns: 1fr;
+  }
+
+  .person-review {
+    margin-top: 2.4rem;
+  }
+
+  .download-types {
+    margin-right: 0;
+  }
+}
+
+/*****************************************************
+  Below 656px (Mobil Phones) and (Mini Small Tablets)
+******************************************************/
+
+@media (max-width: 41em) {
+  .download-part {
+    flex-direction: row;
+  }
+
+  .selected {
+    grid-row: 2;
+    grid-column: 1;
+    width: 100%;
+    margin: 0;
+  }
+
+  .header {
+    padding: 0 4.8rem;
+  }
+
+  .container {
+    max-width: 65em;
+  }
+
+  .input-hero {
+    margin-right: 0%;
+  }
+
+  .how-it-work-details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .how-it-work-details .sub-heading {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.4rem;
+  }
+
+  .opinions,
+  .grid--2--columns,
+  .grid--3--columns,
+  .grid--4--columns {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .feedbacks {
+    grid-template-columns: auto 1fr;
+    column-gap: 3.2rem;
+  }
+
+  .how-it-work-feature {
+    text-align: center;
+  }
+
+  .feature-link {
+    justify-content: center;
+  }
+
+  .marketing-content-text {
+    padding-left: 6.4rem;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .marketing-feature .sub-heading {
+    text-align: left;
+  }
+
+  .discover-text-boxs {
+    justify-self: start;
+    width: 100%;
+  }
+
+  .discover-text-box-main .secondary-heading {
+    width: 60%;
+  }
+
+  .icon-container {
+    box-shadow: 0 1.6rem 1.6rem 1.6rem rgb(0 0 0 / 6%);
+  }
+
+  .learn-how-media {
+    grid-template-columns: 1fr;
+  }
+
+  .learn-how-text {
+    grid-row: 2;
+    padding-left: 0;
+  }
+
+  .download-section .grid--2--columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .download-content-box {
+    width: 65%;
+  }
+
+  .price-plan:nth-child(1),
+  .price-plan:nth-child(2) {
+    height: 100%;
+  }
+
+  .pricing-type {
+    margin: 1.6rem 0;
+  }
+
+  .selected {
+    border-top-width: 3px;
+  }
+
+  .person-review {
+    text-align: center;
+  }
+
+  .sponsors-1,
+  .sponsors-2 {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3.2rem;
+    column-gap: 3.2rem;
+  }
+
+  .sponsors-text-box {
+    width: 100%;
+  }
+
+  .sponsors-text-box .secondary-heading {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
+  }
+
+  .sponsors-2 .sponsor-box:last-child {
+    grid-column: 2/3;
+  }
+
+  .sponsor-box {
+    box-shadow: 0.8rem 2.4rem 2.4rem rgb(0 0 0 / 7%);
+  }
+
+  .list-item-footer,
+  .social-media,
+  .footer-1-col-link,
+  .footer-cols {
+    justify-content: center;
+  }
+
+  .footer-cols {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    text-align: center;
+  }
+
+  .first-col {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .footer-download-copyright {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .download-part {
+    justify-content: center;
+  }
+}
+
+/*****************************************************
+  Below 544px Small (Mobil Phones) 
+******************************************************/
+
+@media (max-width: 34em) {
+  .download-part {
+    display: flex;
+    flex-direction: column;
+  }
+  .download-types {
+    display: flex;
+    flex-direction: column;
+  }
+  .marketing-content-text {
+    margin-left: 0rem;
+  }
+  .logo-img {
+    margin-right: 0rem;
+  }
+  .hero-content-box {
+    padding-left: 4.8rem;
+  }
+  .person-content-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .person-name,
+  .person-job {
+    text-align: center;
+  }
+}
+
+/* ************************************************* */
